@@ -14,7 +14,7 @@ app.set('view engine', 'jade');
 
 app.get('/', function(req, res) {
 
-	var ip_address = "ip_addr";
+	var ip_address = req.connection.remoteAddress;
 	var language = "lang";
 	var software = "soft";
 
