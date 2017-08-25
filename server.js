@@ -18,7 +18,7 @@ app.get('/', function(req, res) {
 	var language = "lang";
 	var software = "soft";
 
-	var output = '{"ip_address": ' + '"' + ip_address + '"' + ', "language": ' + '"' + language + '"' + ', "software: "' + '"' + software + '"}';
+	var output = '{"ip_address": ' + '"' + ip_address + '"' + ', "language": ' + '"' + language + '"' + ', "software": ' + '"' + software + '"}';
   	res.render('index', { title: 'OUTPUT', head: "OUTPUT", message: output });
 
     //res.send(output);
