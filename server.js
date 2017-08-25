@@ -12,12 +12,13 @@ app.set('view engine', 'jade');
 });
 */
 
-app.get('/:id', function(req, res) {
+app.get('/', function(req, res) {
 
-	var unix_output = "first";
-	var natural_output = "second";
+	var ip_address = "ip_addr";
+	var language = "lang";
+	var software = "soft";
 
-	var output = '{ "unix": ' + unix_output + ', "natural": ' + '"' + natural_output + '" }';
+	var output = '{"ip_address": ' + '"' + ip_address + '"' + ', "language": ' + '"' + language + '"' + ', "software: "' + '"' + software + '"}';
   	res.render('index', { title: 'OUTPUT', head: "OUTPUT", message: output });
 
     //res.send(output);
