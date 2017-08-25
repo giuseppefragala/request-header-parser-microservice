@@ -8,10 +8,10 @@ var bodyParser = require('body-parser')
 app.set('views', __dirname + '/');
 app.set('view engine', 'jade');
 
-app.get('/', function(req, res) {
+/*app.get('/', function(req, res) {
       res.sendFile(path.join(__dirname + '/index.htm'));
 });
-
+*/
 
 app.get('/:id', function(req, res) {
 	var input;
