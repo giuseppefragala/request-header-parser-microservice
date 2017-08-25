@@ -14,8 +14,8 @@ app.set('view engine', 'jade');
 
 app.get('/:id', function(req, res) {
 
-	var unix_output"first";
-	var natural_output "second";
+	var unix_output = "first";
+	var natural_output = "second";
 
 	var output = '{ "unix": ' + unix_output + ', "natural": ' + '"' + natural_output + '" }';
   	res.render('index', { title: 'OUTPUT', head: "OUTPUT", message: output });
