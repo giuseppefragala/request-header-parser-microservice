@@ -18,7 +18,6 @@
   },
   "homepage": "https://github.com/giuseppefragala/request-header-parser-microservice#readme",
   "dependencies": {
-    "body-parser": "^1.17.2",
     "express": "^4.15.4",
     "jade": "^1.11.0"
   }
